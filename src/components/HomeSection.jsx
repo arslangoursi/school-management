@@ -1,8 +1,16 @@
 import { PngBackground, PngHome } from "@assets";
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import AddClass from "../models/AddClass";
 
 export default function HomeSection() {
+  const [isAddClass, setIsAddClass] = useState(false);
   return (
     <>
+      {createPortal(
+        isAddClass && <AddClass onClose={() => setIsAddClass(false)} />,
+        document.body
+      )}
       <div className="home__container">
         <div className="home__container__img">
           <img src={PngBackground}></img>
@@ -129,7 +137,10 @@ export default function HomeSection() {
                     Instant download the software now
                   </div>
                 </div>
-                <button className="home__container__left__content__text__btn">
+                <button
+                  className="home__container__left__content__text__btn"
+                  onClick={() => setIsAddClass(true)}
+                >
                   Signup Now
                 </button>
               </div>
