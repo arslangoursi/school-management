@@ -5,7 +5,7 @@ export default function App() {
   return (
     <>
       <Head
-        title="Remixer"
+        title="School-Management"
         image="/favicon.svg"
         url="https://vitefilerouter.com"
         description="Remixer"
