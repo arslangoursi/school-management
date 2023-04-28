@@ -1,0 +1,47 @@
+.financial__buttons {
+  display: flex;
+  padding-top: 2em;
+  gap: 2em;
+  color: white;
+}
+
+.financial__buttons__btn {
+  display: flex;
+  padding: 1.5em;
+  background-color: #5f60ed;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  width: 250px;
+  font-size: 18px;
+}
+
+.financial__table {
+  margin: 1em 1em 1em 0;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(6, 9, 30, 0.25);
+  width: 800px;
+  border-radius: 12px;
+  padding: 2em;
+  height: 550px;
+}
+
+.financial__table__header {
+  margin-bottom: 1em;
+  width: 100%;
+  gap: 1em;
+  display: flex;
+  margin-left: 3.5em;
+}
+
+.financial__table__header__entry {
+  display: flex;
+  padding: 1em;
+  width: 250px;
+
+  border-radius: 12px;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+}
