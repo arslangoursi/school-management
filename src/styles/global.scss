@@ -1019,6 +1019,41 @@ body {
   margin-bottom: 1em;
 }
 
+.addstudent__form__content__right__file__picker {
+  border: 1px solid #5f60ed;
+
+}
+
+.addstudent__form__content__right__file__picker input {
+  cursor: pointer;
+
+  opacity: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 250px;
+}
+
+.addstudent__form__content__right__file__picker__empty {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  right: 20%;
+}
+
+.addstudent__form__content__right__file__picker__file {
+  position: absolute;
+  left: 68%;
+  height: 250px;
+  width: 277px;
+}
+
+.addstudent__form__content__right__file__picker__empty svg {
+  margin-bottom: .9em;
+}
+
 .addstudent__form__content__allheading {
   display: flex;
   justify-content: space-between;
