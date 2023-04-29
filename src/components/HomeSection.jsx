@@ -1,21 +1,47 @@
 import { PngBackground, PngHome } from "@assets";
 import { useState } from "react";
 import { createPortal } from "react-dom";
+import AddClass from "../models/AddClass";
+import AddClassEntres from "../models/AddClassEntres";
+import AddExpense from "../models/AddExpense";
+import AddIncome from "../models/AddIncome";
 import AddSchool from "../models/AddSchool";
 import SignUp from "../models/SignUp";
 
 export default function HomeSection() {
   const [isAddSchool, setIsAddSchool] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
+  const [isAddClass, setIsAddClass] = useState(false);
+  const [isAddClassEntres, setIsAddClassEntres] = useState(false);
+  const [isAddIncome, setIsAddIncome] = useState(false);
+  const [isAddExpense, setIsAddExpense] = useState(false);
 
   return (
     <>
+      {createPortal(
+        isAddExpense && <AddExpense onClose={() => setIsAddExpense(false)} />,
+        document.body
+      )}
       {createPortal(
         isAddSchool && <AddSchool onClose={() => setIsAddSchool(false)} />,
         document.body
       )}
       {createPortal(
         isSignUp && <SignUp onClose={() => setIsSignUp(false)} />,
+        document.body
+      )}
+      {createPortal(
+        isAddClass && <AddClass onClose={() => setIsAddClass(false)} />,
+        document.body
+      )}
+      {createPortal(
+        isAddClassEntres && (
+          <AddClassEntres onclose={() => setIsAddClassEntres(false)} />
+        ),
+        document.body
+      )}
+      {createPortal(
+        isAddIncome && <AddIncome onClose={() => setIsAddExpense(false)} />,
         document.body
       )}
       <div className="home__container">
@@ -67,7 +93,7 @@ export default function HomeSection() {
             </div>
             <div
               className="home__container__right__login"
-              onClick={() => setIsSignUp(true)}
+              onClick={() => setIsAddExpense(true)}
             >
               Login
             </div>
