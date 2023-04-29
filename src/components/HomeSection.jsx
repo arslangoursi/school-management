@@ -1,14 +1,14 @@
 import { PngBackground, PngHome } from "@assets";
 import { useState } from "react";
 import { createPortal } from "react-dom";
-import AddClass from "../models/AddClass";
+import AddSchool from "../models/AddSchool";
 
 export default function HomeSection() {
-  const [isAddClass, setIsAddClass] = useState(false);
+  const [isAddSchool, setIsAddSchool] = useState(false);
   return (
     <>
       {createPortal(
-        isAddClass && <AddClass onClose={() => setIsAddClass(false)} />,
+        isAddSchool && <AddSchool onClose={() => setIsAddSchool(false)} />,
         document.body
       )}
       <div className="home__container">
@@ -139,7 +139,7 @@ export default function HomeSection() {
                 </div>
                 <button
                   className="home__container__left__content__text__btn"
-                  onClick={() => setIsAddClass(true)}
+                  onClick={() => setIsAddSchool(true)}
                 >
                   Signup Now
                 </button>

@@ -1,3 +1,3 @@
-import AddClass from "./AddClass";
+import AddSchool from "./AddSchool";
 
-export { AddClass };
+export { AddSchool };
