@@ -1,3 +1,5 @@
-import AddClass from "./AddClass";
+import AddSchool from "./AddSchool";
+import SignUp from "./SignUp";
 
-export { AddClass };
+export { AddSchool };
+export { SignUp };
