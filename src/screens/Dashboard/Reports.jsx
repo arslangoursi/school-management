@@ -22,8 +22,9 @@ export default function Reports() {
               fill="#F13A51"
             />
           </svg>
+          <div className="dashboard__title">Student Add Student</div>{" "}
         </div>
-        <div className="dashboard__title">Student Add Student</div>
+
         <NavLink to="/dashboard/reports" className="dashboard__headerbutton">
           Add Student
         </NavLink>

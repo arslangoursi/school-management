@@ -30,8 +30,9 @@ export default function Staff() {
               fill="#F13A51"
             />
           </svg>
+          <div className="dashboard__title">Staff</div>{" "}
         </div>
-        <div className="dashboard__title">Staff</div>
+
         <div className="dashboard__left__textbox__textbox__area">
           <div className="dashboard__left__textbox__textbox__area__svg">
             <svg

@@ -34,22 +34,22 @@ export default function FinancialsPaytostaff() {
               fill="#F13A51"
             />
           </svg>
-        </div>
-        <div className="dashboard__title">
-          Financials{" "}
-          <svg
-            width="17"
-            height="18"
-            viewBox="0 0 17 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.691181 17.8705V12.9813L12.0238 8.31875V10.0024L0.691181 5.30752V0.418323L16.0711 6.76456V11.5566L0.691181 17.8705Z"
-              fill="#222A5A"
-            />
-          </svg>{" "}
-          Pay to Staff
+          <div className="dashboard__title">
+            Financials{" "}
+            <svg
+              width="17"
+              height="18"
+              viewBox="0 0 17 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.691181 17.8705V12.9813L12.0238 8.31875V10.0024L0.691181 5.30752V0.418323L16.0711 6.76456V11.5566L0.691181 17.8705Z"
+                fill="#222A5A"
+              />
+            </svg>{" "}
+            Pay to Staff
+          </div>{" "}
         </div>
       </div>
       <div className="FinancialsPaytostaff__content__all__main">

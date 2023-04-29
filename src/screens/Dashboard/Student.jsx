@@ -22,8 +22,9 @@ export default function Student() {
               fill="#F13A51"
             />
           </svg>
+          <div className="dashboard__title">Students</div>{" "}
         </div>
-        <div className="dashboard__title">Students</div>
+
         <div className="dashboard__left__textbox__textbox__area">
           <div className="dashboard__left__textbox__textbox__area__svg">
             <svg

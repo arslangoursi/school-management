@@ -35,8 +35,8 @@ export default function Finances() {
               fill="#F13A51"
             />
           </svg>
+          <div className="dashboard__title">Financials</div>{" "}
         </div>
-        <div className="dashboard__title">Financials</div>
       </div>
       <div className="financial__buttons">
         <FinanceButtonEntry text="Pay to Staff" />

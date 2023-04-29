@@ -20,8 +20,8 @@ export default function Index() {
                 fill="#F13A51"
               />
             </svg>
+            <div className="dashboard__title">Dashboard</div>{" "}
           </div>
-          <div className="dashboard__title">Dashboard</div>
         </div>
         <div className="dashboard__content">
           <div className="dashboard__left">

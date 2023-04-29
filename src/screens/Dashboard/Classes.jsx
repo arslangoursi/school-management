@@ -29,8 +29,8 @@ export default function Classes() {
               fill="#F13A51"
             />
           </svg>
-        </div>
-        <div className="dashboard__title">Classes</div>
+          <div className="dashboard__title">Classes</div>   </div>
+     
         <NavLink to="/dashboard/reports" className="dashboard__headerbutton">
           Add Student
         </NavLink>
