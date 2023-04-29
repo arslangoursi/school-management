@@ -18,7 +18,7 @@ $primary: #222a5a;
   align-items: center;
   flex-direction: column;
   background-color: #fff;
-  padding: 4em;
+  padding: 2.5em;
   margin: 2em;
   border-radius: 15px;
 }
@@ -121,6 +121,52 @@ $primary: #222a5a;
   font-weight: bold;
   margin-right: 9px;
 }
+.school__header__sub__heading {
+  font-size: 14px;
+  margin-bottom: 2em;
+  color: #5f60ed;
+  font-weight: bold;
+}
+.signal__input__entry__wraper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signal__input__entry {
+  width: 100%;
+  padding: 0.5em 0em;
+  border: none;
+  border-bottom: 1px solid #444141;
+  margin: 1em 0.3em;
+  outline: none;
+}
+.signal__input__entry::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: start;
+  opacity: 0.5;
+}
+.input__multi__entry__wraper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input__multi__entry {
+  width: 100%;
+  padding: 0.5em 0em;
+  border: none;
+  border-bottom: 1px solid #444141;
+  margin: 1em 0.3em;
+  outline: none;
+}
+.input__multi__entry::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: start;
+  opacity: 0.7;
+}
 @media (max-width: 600px) {
   .model__content {
     padding: 1em;
@@ -128,5 +174,8 @@ $primary: #222a5a;
   .add__school__header__heading {
     font-size: 18px;
     text-align: center;
+  }
+  .input__multi__entry__wraper {
+    flex-direction: column;
   }
 }

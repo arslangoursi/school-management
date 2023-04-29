@@ -2,13 +2,20 @@ import { PngBackground, PngHome } from "@assets";
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import AddSchool from "../models/AddSchool";
+import SignUp from "../models/SignUp";
 
 export default function HomeSection() {
   const [isAddSchool, setIsAddSchool] = useState(false);
+  const [isSignUp, setIsSignUp] = useState(false);
+
   return (
     <>
       {createPortal(
         isAddSchool && <AddSchool onClose={() => setIsAddSchool(false)} />,
+        document.body
+      )}
+      {createPortal(
+        isSignUp && <SignUp onClose={() => setIsSignUp(false)} />,
         document.body
       )}
       <div className="home__container">
@@ -58,7 +65,12 @@ export default function HomeSection() {
                 </svg>
               </span>
             </div>
-            <div className="home__container__right__login">Login</div>
+            <div
+              className="home__container__right__login"
+              onClick={() => setIsSignUp(true)}
+            >
+              Login
+            </div>
           </div>
         </div>
         <div className="home__container__content">
