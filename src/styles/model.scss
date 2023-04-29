@@ -209,7 +209,41 @@ $primary: #222a5a;
   margin: 15px;
   cursor: pointer;
 }
+.member__card__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.member__card {
+  width: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #222a5a;
+  color: white;
+  padding: 1em;
+  border-radius: 12px;
+  margin: 12px;
+}
+.member__card__heading {
+  font-size: 20px;
+}
+.member__card__deatil {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0px;
+}
 @media (max-width: 600px) {
+  .member__card {
+    width: 100%;
+  }
+  .member__card__heading {
+    font-size: 16px;
+  }
+  .member__card__container {
+    flex-direction: column;
+  }
   .model__content {
     padding: 1em;
   }

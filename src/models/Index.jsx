@@ -4,6 +4,7 @@ import AddClass from "./AddClass";
 import AddClassEntres from "./AddClassEntres";
 import AddIncome from "./AddIncome";
 import AddExpense from "./AddExpense";
+import StaffMembers from "./StaffMembers";
 
 export { AddSchool };
 export { SignUp };
@@ -11,3 +12,4 @@ export { AddClass };
 export { AddClassEntres };
 export { AddIncome };
 export { AddExpense };
+export { StaffMembers };
