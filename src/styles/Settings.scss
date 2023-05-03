@@ -1,0 +1,31 @@
+.setting__content {
+  display: flex;
+}
+.setting__content__entries {
+  margin-top: 3em;
+  padding: 3em 3em 1.5em 2em;
+  background-color: #fff;
+
+  border-radius: 15px;
+  margin-right: 2em;
+  width: 300px;
+}
+.setting__content__entries:hover {
+  background-color: #5f60ed;
+  color: #fff;
+  cursor: pointer;
+}
+.setting__content__entries:hover .setting__content__entry__heading {
+  color: #fff;
+}
+.setting__content__entry__heading {
+  color: #5f60ed;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.setting__content__entry__subheading {
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}

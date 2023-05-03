@@ -1039,7 +1039,9 @@ body {
 }
 
 .addstudent__form__content__right__file__picker {
-  border: 1px solid #5f60ed;
+  border-radius: 15px;
+  border: 1px dashed #5f60ed;
+  background: rgba(95, 96, 237, 0.07);
 }
 
 .addstudent__form__content__right__file__picker input {
@@ -1047,7 +1049,7 @@ body {
 
   opacity: 0;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  height: 250px;
+  height: 200px;
 }
 
 .addstudent__form__content__right__file__picker__empty {
@@ -1057,15 +1059,17 @@ body {
   font-size: 16px;
   flex-direction: column;
   position: absolute;
-  top: 40%;
-  right: 20%;
+  top: 20%;
+  right: 30%;
 }
 
 .addstudent__form__content__right__file__picker__file {
   position: absolute;
-  left: 68%;
-  height: 250px;
-  width: 277px;
+  left: 1px;
+  top: 1px;
+  height: 200px;
+  width: 248px;
+  border-radius: 15px;
 }
 
 .addstudent__form__content__right__file__picker__empty svg {
@@ -1079,10 +1083,12 @@ body {
 }
 
 .addstudent__form__content__right {
-  width: 35%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 1em;
+  position: relative;
+  max-width: 250px;
 }
 
 .addstudent__form__content__all__buttons {
