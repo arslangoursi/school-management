@@ -5,7 +5,7 @@ export default function App() {
   return (
     <>
       <Head
-        title="School-Management"
+        title="Horizon System"
         image="/favicon.svg"
         url="https://vitefilerouter.com"
         description="Remixer"

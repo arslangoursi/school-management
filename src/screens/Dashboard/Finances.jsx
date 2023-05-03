@@ -51,7 +51,10 @@ export default function Finances() {
           />
         </div>
         <div className="container__main__content__listing__table__finaces">
-          <div className="container__main__content__listing__table__header">
+          <div
+            className="container__main__content__listing__table__header"
+            style={{ color: "#222A5A" }}
+          >
             <div className="container__main__content__listing__table__header__entry">
               Trans ID{" "}
             </div>
@@ -110,7 +113,10 @@ export default function Finances() {
 
 function TableEntry({}) {
   return (
-    <div className="container__main__content__listing__table__content__list">
+    <div
+      className="container__main__content__listing__table__content__list"
+      style={{ color: "#313177" }}
+    >
       <div className="container__main__content__listing__table__content__list__entry">
         4543
       </div>

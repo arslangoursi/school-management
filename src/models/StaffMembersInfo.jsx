@@ -1,5 +1,5 @@
 import React from "react";
-export default function StaffMembers({ onClose }) {
+export default function StaffMembersInfo({ onClose }) {
   return (
     <>
       <div className="model__container">
@@ -53,6 +53,61 @@ export default function StaffMembers({ onClose }) {
               </div>
             </div>
           </div>
+
+          <div className="container__main__content__listing__table__finaces">
+            <div
+              className="container__main__content__listing__table__header"
+              style={{ color: "#222A5A" }}
+            >
+              <div className="container__main__content__listing__table__header__entry">
+                Staff ID
+              </div>
+
+              <div className="container__main__content__listing__table__header__entry">
+                Name
+              </div>
+              <div className="container__main__content__listing__table__header__entry">
+                Father/Guardian
+              </div>
+              <div className="container__main__content__listing__table__header__entry">
+                Amount
+              </div>
+
+              <div className="container__main__content__listing__table__header__entry">
+                Type
+              </div>
+            </div>
+            <div className="container__main__content__listing__table__content">
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+              <TableEntry />
+            </div>
+          </div>
           <div className="add__school__button">
             <button className="add__school__button__entry">
               <div className="add__school__button__entry__text">Pay Now</div>
@@ -61,5 +116,31 @@ export default function StaffMembers({ onClose }) {
         </div>
       </div>
     </>
+  );
+}
+function TableEntry({}) {
+  return (
+    <div
+      className="container__main__content__listing__table__content__list"
+      style={{ color: "#313177" }}
+    >
+      <div className="container__main__content__listing__table__content__list__entry">
+        4543
+      </div>
+
+      <div className="container__main__content__listing__table__content__list__entry">
+        Mehfooz ur Rehmaan
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        Ijaz Ahmad
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        56000
+      </div>
+
+      <div className="container__main__content__listing__table__content__list__entry">
+        Teacher
+      </div>
+    </div>
   );
 }

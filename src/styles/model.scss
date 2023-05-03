@@ -14,6 +14,8 @@ $primary: #222a5a;
 }
 .model__content {
   width: fit-content;
+  max-width: 900px;
+  height: 700px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -106,18 +108,24 @@ $primary: #222a5a;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 3em 0em;
+  margin-top: 3em;
 }
 .add__school__button__entry {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #5f60ed;
-  padding: 12px 30px;
+  padding: 12px 70px;
   border-radius: 12px;
   border: none;
   color: white;
   cursor: pointer;
+  border: 1px solid transparent;
+}
+.add__school__button__entry:hover {
+  background-color: #ffffff;
+  color: #5f60ed;
+  border: 1px solid #5f60ed;
 }
 .add__school__button__entry__text {
   font-size: 14px;
@@ -216,7 +224,7 @@ $primary: #222a5a;
   justify-content: space-between;
 }
 .member__card {
-  width: 300px;
+  width: 250px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -225,12 +233,17 @@ $primary: #222a5a;
   padding: 1em;
   border-radius: 12px;
   margin: 12px;
+  border: 1px solid transparent;
 }
+// .member__card :first {
+//   margin-left: 0px;
+// }
 .member__card__heading {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 .member__card__deatil {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin: 8px 0px;
 }
