@@ -1,4 +1,5 @@
 $primary: #222a5a;
+
 .model__container {
   display: flex;
   align-items: center;
@@ -12,6 +13,7 @@ $primary: #222a5a;
   height: 100%;
   overflow: hidden;
 }
+
 .model__content {
   width: fit-content;
   max-width: 900px;
@@ -58,6 +60,7 @@ $primary: #222a5a;
   border-radius: 8px;
   cursor: pointer;
 }
+
 .add__school__wraper {
   width: 100%;
   display: flex;
@@ -65,6 +68,7 @@ $primary: #222a5a;
   justify-content: center;
   flex-direction: column;
 }
+
 .add__school__header {
   width: 100%;
   display: flex;
@@ -72,14 +76,17 @@ $primary: #222a5a;
   justify-content: center;
   flex-direction: column;
 }
+
 .add__school__header__heading {
   font-size: 30px;
   margin: 1em 0em;
   color: $primary;
 }
+
 .add__school__header__heading span {
   font-weight: bold;
 }
+
 .add__school__input__wraper {
   width: 400px;
   display: flex;
@@ -88,6 +95,7 @@ $primary: #222a5a;
   flex-direction: column;
   margin: 3em 0em;
 }
+
 .add__school__input {
   width: 100%;
   padding: 0.5em 1em;
@@ -96,6 +104,7 @@ $primary: #222a5a;
   margin-bottom: 1em;
   outline: none;
 }
+
 .add__school__input::placeholder {
   font-size: 14px;
   font-weight: 400;
@@ -103,6 +112,7 @@ $primary: #222a5a;
   text-transform: uppercase;
   opacity: 0.5;
 }
+
 .add__school__button {
   width: 100%;
   display: flex;
@@ -110,6 +120,7 @@ $primary: #222a5a;
   justify-content: center;
   margin-top: 3em;
 }
+
 .add__school__button__entry {
   display: flex;
   align-items: center;
@@ -122,28 +133,48 @@ $primary: #222a5a;
   cursor: pointer;
   border: 1px solid transparent;
 }
+
+.add__school__button__entry a {
+
+  color: white;
+}
+
+.add__school__button__entry:hover a {
+
+  color: #5f60ed;
+}
+
+.add__school__button__entry:hover .add__school__button__entry__svg * {
+  // stroke: #5f60ed;
+  fill: #5f60ed;
+}
+
 .add__school__button__entry:hover {
   background-color: #ffffff;
   color: #5f60ed;
   border: 1px solid #5f60ed;
 }
+
 .add__school__button__entry__text {
   font-size: 14px;
   font-weight: bold;
   margin-right: 9px;
 }
+
 .school__header__sub__heading {
   font-size: 14px;
   margin-bottom: 2em;
   color: #5f60ed;
   font-weight: bold;
 }
+
 .signal__input__entry__wraper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .signal__input__entry {
   width: 100%;
   padding: 0.5em 0em;
@@ -152,18 +183,43 @@ $primary: #222a5a;
   margin: 1em 0.3em;
   outline: none;
 }
+
 .signal__input__entry::placeholder {
   font-size: 14px;
   font-weight: 400;
   text-align: start;
   opacity: 0.5;
 }
+
+.signal__input__entry__wraper__conf__heading {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #272769;
+  max-width: 150px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: .5em;
+}
+
+.signal__input__entry__wraper__confclass {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 3em;
+  font-size: 18px;
+  color: #94949b;
+  font-weight: 600;
+  max-width: 150px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
 .input__multi__entry__wraper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
+
 .input__multi__entry {
   width: 300px;
   padding: 0.5em 0em;
@@ -172,12 +228,14 @@ $primary: #222a5a;
   margin: 1em;
   outline: none;
 }
+
 .input__multi__entry::placeholder {
   font-size: 14px;
   font-weight: 400;
   text-align: start;
   opacity: 0.7;
 }
+
 .add__class__heading {
   width: 100%;
   display: flex;
@@ -188,6 +246,7 @@ $primary: #222a5a;
   margin: 1em;
   color: #272769;
 }
+
 .Change__class__heading {
   width: 100%;
   display: flex;
@@ -198,6 +257,7 @@ $primary: #222a5a;
   margin: 18px;
   color: #5f60ed;
 }
+
 .add__section__btn__wraper {
   width: 100%;
   display: flex;
@@ -205,6 +265,7 @@ $primary: #222a5a;
   justify-content: center;
   margin: 2em 0em;
 }
+
 .add__section__btn__entry {
   display: flex;
   align-items: center;
@@ -217,22 +278,26 @@ $primary: #222a5a;
   cursor: pointer;
   font-weight: bold;
 }
+
 .signal__input__entry__wraper__svg {
-  width: 100%;
+  // width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
 }
+
 .signal__input__entry__wraper__svg svg {
   margin: 15px;
   cursor: pointer;
 }
+
 .member__card__container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .member__card {
   width: 250px;
   display: flex;
@@ -245,6 +310,7 @@ $primary: #222a5a;
   margin: 12px;
   border: 1px solid transparent;
 }
+
 // .member__card :first {
 //   margin-left: 0px;
 // }
@@ -252,11 +318,13 @@ $primary: #222a5a;
   font-size: 18px;
   font-weight: 400;
 }
+
 .member__card__deatil {
   font-size: 18px;
   font-weight: bold;
   margin: 8px 0px;
 }
+
 .extra__fund {
   display: flex;
   flex-direction: column;
@@ -264,11 +332,13 @@ $primary: #222a5a;
   min-width: 600px;
   margin: 1em 0;
 }
+
 .extra__fund__entry {
   display: flex;
   margin: 0.5em 1em;
   align-items: center;
 }
+
 .extra__fund__entry__title {
   font-size: 18px;
   font-weight: bold;
@@ -276,6 +346,7 @@ $primary: #222a5a;
   display: flex;
   flex: 1;
 }
+
 .extra__fund__entry__input {
   font-size: 18px;
   font-weight: bold;
@@ -288,33 +359,41 @@ $primary: #222a5a;
   max-width: 300px;
   display: flex;
 }
+
 .extra__fund__entry__input::placeholder {
   font-size: 14px;
   font-weight: 400;
   opacity: 0.5;
 }
+
 .extra__fund__entry__input::-webkit-outer-spin-button,
 .extra__fund__entry__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 @media (max-width: 600px) {
   .member__card {
     width: 100%;
   }
+
   .member__card__heading {
     font-size: 16px;
   }
+
   .member__card__container {
     flex-direction: column;
   }
+
   .model__content {
     padding: 1em;
   }
+
   .add__school__header__heading {
     font-size: 18px;
     text-align: center;
   }
+
   .input__multi__entry__wraper {
     flex-direction: column;
   }
