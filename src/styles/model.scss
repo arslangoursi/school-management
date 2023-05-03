@@ -15,7 +15,7 @@ $primary: #222a5a;
 .model__content {
   width: fit-content;
   max-width: 900px;
-  height: 700px;
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -162,14 +162,14 @@ $primary: #222a5a;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .input__multi__entry {
-  width: 100%;
+  width: 300px;
   padding: 0.5em 0em;
   border: none;
-  border-bottom: 1px solid #444141;
-  margin: 1em 0.3em;
+  border-bottom: 1px solid #222a5a;
+  margin: 1em;
   outline: none;
 }
 .input__multi__entry::placeholder {
@@ -187,6 +187,16 @@ $primary: #222a5a;
   font-weight: bold;
   margin: 1em;
   color: #272769;
+}
+.Change__class__heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 18px;
+  color: #5f60ed;
 }
 .add__section__btn__wraper {
   width: 100%;
@@ -246,6 +256,47 @@ $primary: #222a5a;
   font-size: 18px;
   font-weight: bold;
   margin: 8px 0px;
+}
+.extra__fund {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 600px;
+  margin: 1em 0;
+}
+.extra__fund__entry {
+  display: flex;
+  margin: 0.5em 1em;
+  align-items: center;
+}
+.extra__fund__entry__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #272769;
+  display: flex;
+  flex: 1;
+}
+.extra__fund__entry__input {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5f60ed;
+  border: none;
+  border-bottom: 1px solid #222a5a;
+  outline: none;
+  text-align: center;
+  width: fit-content;
+  max-width: 300px;
+  display: flex;
+}
+.extra__fund__entry__input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.extra__fund__entry__input::-webkit-outer-spin-button,
+.extra__fund__entry__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 @media (max-width: 600px) {
   .member__card {

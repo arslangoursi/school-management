@@ -9,6 +9,7 @@ import AddSchool from "../models/AddSchool";
 import SignUp from "../models/SignUp";
 import StaffMembers from "../models/StaffMembers";
 import StaffMembersInfo from "../models/StaffMembersInfo";
+import ChangeClassFee from "../models/ChangeClassFee";
 
 export default function HomeSection() {
   const [isAddSchool, setIsAddSchool] = useState(false);
@@ -19,9 +20,16 @@ export default function HomeSection() {
   const [isAddExpense, setIsAddExpense] = useState(false);
   const [isStaffMembers, setIsStaffMembers] = useState(false);
   const [isStaffMembersInfo, setIsStaffMembersInfo] = useState(false);
+  const [isChangeClassFee, setIsChangeClassFee] = useState(false);
 
   return (
     <>
+      {createPortal(
+        isChangeClassFee && (
+          <ChangeClassFee onClose={() => setIsChangeClassFee(false)} />
+        ),
+        document.body
+      )}
       {createPortal(
         isStaffMembersInfo && (
           <StaffMembersInfo onClose={() => setIsStaffMembersInfo(false)} />
@@ -109,7 +117,7 @@ export default function HomeSection() {
             </div>
             <div
               className="home__container__right__login"
-              onClick={() => setIsStaffMembersInfo(true)}
+              onClick={() => setIsChangeClassFee(true)}
             >
               Login
             </div>

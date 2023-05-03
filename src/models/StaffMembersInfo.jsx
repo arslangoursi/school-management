@@ -60,12 +60,9 @@ export default function StaffMembersInfo({ onClose }) {
               style={{ color: "#222A5A" }}
             >
               <div className="container__main__content__listing__table__header__entry">
-                Staff ID
+                Fund Name
               </div>
 
-              <div className="container__main__content__listing__table__header__entry">
-                Name
-              </div>
               <div className="container__main__content__listing__table__header__entry">
                 Father/Guardian
               </div>

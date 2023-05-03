@@ -6,6 +6,8 @@ import AddExpense from "./AddExpense";
 import StaffMembers from "./StaffMembers";
 import StaffMembersInfo from "./StaffMembers";
 import AddClassEntres from "./AddClassEntres";
+import AddFunds from "./AddFunds";
+import ChangeClassFee from "./AddFunds";
 
 export {
   AddSchool,
@@ -16,4 +18,6 @@ export {
   AddExpense,
   StaffMembers,
   StaffMembersInfo,
+  AddFunds,
+  ChangeClassFee,
 };
