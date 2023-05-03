@@ -1,6 +1,7 @@
 import { PngBackground, PngHome } from "@assets";
 import { useState } from "react";
 import { createPortal } from "react-dom";
+import { NavLink } from "react-router-dom";
 import AddClass from "../models/AddClass";
 import AddClassEntres from "../models/AddClassEntres";
 import AddExpense from "../models/AddExpense";
@@ -13,7 +14,7 @@ import ChangeClassFee from "../models/ChangeClassFee";
 
 export default function HomeSection() {
   const [isAddSchool, setIsAddSchool] = useState(false);
-  const [isSignUp, setIsSignUp] = useState(false);
+
   const [isAddClass, setIsAddClass] = useState(false);
   const [isAddClassEntres, setIsAddClassEntres] = useState(false);
   const [isAddIncome, setIsAddIncome] = useState(false);
@@ -50,10 +51,7 @@ export default function HomeSection() {
         isAddSchool && <AddSchool onClose={() => setIsAddSchool(false)} />,
         document.body
       )}
-      {createPortal(
-        isSignUp && <SignUp onClose={() => setIsSignUp(false)} />,
-        document.body
-      )}
+
       {createPortal(
         isAddClass && <AddClass onClose={() => setIsAddClass(false)} />,
         document.body
@@ -115,12 +113,9 @@ export default function HomeSection() {
                 </svg>
               </span>
             </div>
-            <div
-              className="home__container__right__login"
-              onClick={() => setIsChangeClassFee(true)}
-            >
+            <NavLink className="home__container__right__login" to="/dashboard">
               Login
-            </div>
+            </NavLink>
           </div>
         </div>
         <div className="home__container__content">

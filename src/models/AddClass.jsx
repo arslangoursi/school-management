@@ -1,8 +1,17 @@
 import { NavLink } from "react-router-dom";
-
+import AddClassEntres from "../models/AddClassEntres";
+import { useState } from "react";
+import { createPortal } from "react-dom";
 export default function AddClass() {
+  const [isAddClassEntres, setIsAddClassEntres] = useState(false);
   return (
     <>
+      {createPortal(
+        isAddClassEntres && (
+          <AddClassEntres onclose={() => setIsAddClassEntres(false)} />
+        ),
+        document.body
+      )}
       <div className="model__container">
         <div className="model__content">
           <div className="add__school__header">
@@ -35,7 +44,12 @@ export default function AddClass() {
 
           <div className="add__school__button">
             <button className="add__school__button__entry">
-              <div className="add__school__button__entry__text">Add Class</div>
+              <div
+                className="add__school__button__entry__text"
+                onClick={() => setIsAddClassEntres(true)}
+              >
+                Add Class
+              </div>
               <div className="add__school__button__entry__svg"></div>
             </button>
           </div>

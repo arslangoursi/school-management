@@ -1,8 +1,17 @@
 import { NavLink } from "react-router-dom";
-
+import ConfirmClass from "../models/ConfirmClass";
+import { useState } from "react";
+import { createPortal } from "react-dom";
 export default function AddClassEntres() {
+  const [isConfirmClass, setIsConfirmClass] = useState(false);
   return (
     <>
+      {createPortal(
+        isConfirmClass && (
+          <ConfirmClass onClose={() => setIsConfirmClass(false)} />
+        ),
+        document.body
+      )}
       <div className="model__container">
         <div className="model__content">
           <div className="add__school__header">
@@ -77,7 +86,12 @@ export default function AddClassEntres() {
           </div>
           <div className="add__school__button">
             <button className="add__school__button__entry">
-              <div className="add__school__button__entry__text">Continue</div>
+              <div
+                className="add__school__button__entry__text"
+                onClick={() => setIsConfirmClass(true)}
+              >
+                Continue
+              </div>
               <div className="add__school__button__entry__svg">
                 <svg width="19" height="14" viewBox="0 0 19 14" fill="none">
                   <path
