@@ -1,6 +1,10 @@
-export default function FinanceButtonEntry({ text }) {
+export default function FinanceButtonEntry({ text, onClick }) {
   return (
-    <div className="financial__buttons__btn" style={{ whiteSpace: "pre-line" }}>
+    <div
+      className="financial__buttons__btn"
+      style={{ whiteSpace: "pre-line" }}
+      onClick={onClick}
+    >
       {text}
       <svg
         width="10"

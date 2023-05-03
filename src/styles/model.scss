@@ -135,12 +135,10 @@ $primary: #222a5a;
 }
 
 .add__school__button__entry a {
-
   color: white;
 }
 
 .add__school__button__entry:hover a {
-
   color: #5f60ed;
 }
 
@@ -193,12 +191,12 @@ $primary: #222a5a;
 
 .signal__input__entry__wraper__conf__heading {
   width: 100%;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
   color: #272769;
   max-width: 150px;
   font-family: "Plus Jakarta Sans", sans-serif;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .signal__input__entry__wraper__confclass {
@@ -206,9 +204,9 @@ $primary: #222a5a;
   justify-content: flex-start;
   width: 100%;
   margin-left: 3em;
-  font-size: 18px;
-  color: #94949b;
-  font-weight: 600;
+  font-size: 16px;
+  color: #272769;
+
   max-width: 150px;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -280,7 +278,7 @@ $primary: #222a5a;
 }
 
 .signal__input__entry__wraper__svg {
-  // width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;

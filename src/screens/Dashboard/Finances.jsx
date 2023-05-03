@@ -1,10 +1,25 @@
 import { Edit2, Trash2 } from "react-feather";
 import AmountEntry from "../../components/AmountEntry";
 import FinanceButtonEntry from "../../components/FinanceButtonEntry";
+import AddExpense from "../../models/AddExpense";
+import AddIncome from "../../models/AddIncome";
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Finances() {
+  const [isAddIncome, setIsAddIncome] = useState(false);
+  const [isAddExpense, setIsAddExpense] = useState(false);
   return (
     <>
+      {createPortal(
+        isAddExpense && <AddExpense onClose={() => setIsAddExpense(false)} />,
+        document.body
+      )}
+      {/* {createPortal(
+        isAddIncome && <AddIncome onClose={() => setIsAddIncome(false)} />,
+        document.body
+      )} */}
       <div className="dashboard__heading">
         <div className="dashboard__logo">
           <svg
@@ -39,9 +54,36 @@ export default function Finances() {
         </div>
       </div>
       <div className="financial__buttons">
-        <FinanceButtonEntry text="Pay to Staff" />
-        <FinanceButtonEntry text={"Add \n Custom Expense"} />
-        <FinanceButtonEntry text={"Add \n Custom Income"} />
+        <NavLink
+          className="financial__buttons__btn"
+          style={{ whiteSpace: "pre-line" }}
+          to="/dashboard/FinancialsPaytostaff"
+        >
+          Pay to Staff
+          <svg
+            width="10"
+            height="17"
+            viewBox="0 0 10 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 15L8.54971 8.45029L2 1.90058"
+              stroke="white"
+              strokeWidth="2.45614"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </NavLink>
+        <FinanceButtonEntry
+          text={"Add \n Custom Expense"}
+          // onClick={setIsAddExpense(true)}
+        />
+        <FinanceButtonEntry
+          text={"Add \n Custom Income"}
+          // to={setIsAddIncome(true)}
+        />
       </div>
       <div className="financial__table">
         <div className="financial__table__header">

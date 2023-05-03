@@ -1,36 +1,23 @@
 import { PngBackground, PngHome } from "@assets";
-import { useState } from "react";
+
 import { createPortal } from "react-dom";
 import { NavLink } from "react-router-dom";
-import AddClass from "../models/AddClass";
-import AddClassEntres from "../models/AddClassEntres";
-import AddExpense from "../models/AddExpense";
-import AddIncome from "../models/AddIncome";
+
 import AddSchool from "../models/AddSchool";
 import SignUp from "../models/SignUp";
 import StaffMembers from "../models/StaffMembers";
 import StaffMembersInfo from "../models/StaffMembersInfo";
 import ChangeClassFee from "../models/ChangeClassFee";
+import { useState } from "react";
 
 export default function HomeSection() {
   const [isAddSchool, setIsAddSchool] = useState(false);
 
-  const [isAddClass, setIsAddClass] = useState(false);
-  const [isAddClassEntres, setIsAddClassEntres] = useState(false);
-  const [isAddIncome, setIsAddIncome] = useState(false);
-  const [isAddExpense, setIsAddExpense] = useState(false);
   const [isStaffMembers, setIsStaffMembers] = useState(false);
   const [isStaffMembersInfo, setIsStaffMembersInfo] = useState(false);
-  const [isChangeClassFee, setIsChangeClassFee] = useState(false);
 
   return (
     <>
-      {createPortal(
-        isChangeClassFee && (
-          <ChangeClassFee onClose={() => setIsChangeClassFee(false)} />
-        ),
-        document.body
-      )}
       {createPortal(
         isStaffMembersInfo && (
           <StaffMembersInfo onClose={() => setIsStaffMembersInfo(false)} />
@@ -43,29 +30,12 @@ export default function HomeSection() {
         ),
         document.body
       )}
-      {createPortal(
-        isAddExpense && <AddExpense onClose={() => setIsAddExpense(false)} />,
-        document.body
-      )}
+
       {createPortal(
         isAddSchool && <AddSchool onClose={() => setIsAddSchool(false)} />,
         document.body
       )}
 
-      {createPortal(
-        isAddClass && <AddClass onClose={() => setIsAddClass(false)} />,
-        document.body
-      )}
-      {createPortal(
-        isAddClassEntres && (
-          <AddClassEntres onclose={() => setIsAddClassEntres(false)} />
-        ),
-        document.body
-      )}
-      {createPortal(
-        isAddIncome && <AddIncome onClose={() => setIsAddExpense(false)} />,
-        document.body
-      )}
       <div className="home__container">
         <div className="home__container__img">
           <img src={PngBackground}></img>

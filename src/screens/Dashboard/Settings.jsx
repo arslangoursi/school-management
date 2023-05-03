@@ -1,10 +1,26 @@
 import { Edit2, Trash2 } from "react-feather";
 import AmountEntry from "../../components/AmountEntry";
 import FinanceButtonEntry from "../../components/FinanceButtonEntry";
+import ChangeClassFee from "../../models/ChangeClassFee";
+import AddFunds from "../../models/AddFunds";
+import { useState } from "react";
+import { createPortal } from "react-dom";
 
 export default function Settings() {
+  const [isChangeClassFee, setIsChangeClassFee] = useState(false);
+  const [isAddFunds, setIsAddFunds] = useState(false);
   return (
     <>
+      {createPortal(
+        isChangeClassFee && (
+          <ChangeClassFee onClose={() => setIsChangeClassFee(false)} />
+        ),
+        document.body
+      )}
+      {createPortal(
+        isAddFunds && <AddFunds onClose={() => setIsAddFunds(false)} />,
+        document.body
+      )}
       <div className="dashboard__heading">
         <div className="dashboard__logo">
           <svg
@@ -23,7 +39,10 @@ export default function Settings() {
         </div>
       </div>
       <div className="setting__content">
-        <div className="setting__content__entries">
+        <div
+          className="setting__content__entries"
+          onClick={() => setIsChangeClassFee(true)}
+        >
           <div className="setting__content__entry">
             <div className="setting__content__entry__heading">
               Change Classes Fee
@@ -33,7 +52,11 @@ export default function Settings() {
             </div>
           </div>
         </div>
-        <div className="setting__content__entries">
+        <div
+          className="setting__content__entries"
+          onClick={() => setIsAddFunds(true)}
+        >
+          {" "}
           <div className="setting__content__entry">
             <div className="setting__content__entry__heading">
               Add Extra Fund{" "}
