@@ -288,10 +288,12 @@
   margin-bottom: 0.6em;
 }
 .footer__text__sub__heading {
-  padding: 0em 14em;
-  font-size: 16px;
+  padding: 1em 0em;
+  width: 650px;
+  font-size: 14px;
   margin-bottom: 1em;
   text-align: center;
+  color: #e2e1e1;
 }
 .footer__btn__wraper {
   display: flex;
@@ -362,6 +364,10 @@
 @media (max-width: 1100px) {
   .pricing__section__content {
     width: 45%;
+  }
+  .footer__buttom__container__text {
+    font-size: 12px;
+    margin: 0;
   }
 }
 @media (max-width: 960px) {

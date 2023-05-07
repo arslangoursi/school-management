@@ -40,16 +40,17 @@ export default function AddClass() {
             <div className="add__school__header__heading">
               Welcome to the <span>Horizon School System</span>
             </div>
+            <div className="school__header__sub__heading">
+              Hello Education School
+            </div>
           </div>
 
           <div className="add__school__button">
-            <button className="add__school__button__entry">
-              <div
-                className="add__school__button__entry__text"
-                onClick={() => setIsAddClassEntres(true)}
-              >
-                Add Class
-              </div>
+            <button
+              className="add__school__button__entry"
+              onClick={() => setIsAddClassEntres(true)}
+            >
+              <div className="add__school__button__entry__text">Add Class</div>
               <div className="add__school__button__entry__svg"></div>
             </button>
           </div>

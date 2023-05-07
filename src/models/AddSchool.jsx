@@ -47,13 +47,11 @@ export default function AddSchool() {
             />
           </div>
           <div className="add__school__button">
-            <button className="add__school__button__entry">
-              <div
-                className="add__school__button__entry__text"
-                onClick={() => setIsSignUp(true)}
-              >
-                Continue
-              </div>
+            <button
+              className="add__school__button__entry"
+              onClick={() => setIsSignUp(true)}
+            >
+              <div className="add__school__button__entry__text">Continue</div>
               <div className="add__school__button__entry__svg">
                 <svg width="19" height="14" viewBox="0 0 19 14" fill="none">
                   <path
