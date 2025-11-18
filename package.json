@@ -13,25 +13,25 @@
     "deploy": "vite build && npx firebase deploy"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-countup": "^6.4.2",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
     "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "6.11.0",
-    "react-select": "^5.7.3"
+    "react-router-dom": "6.30.2",
+    "react-select": "^5.10.2"
   },
   "devDependencies": {
-    "@types/node": "^18.16.3",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.1",
-    "@vitejs/plugin-react": "^4.0.0",
-    "sass": "^1.62.1",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.4",
-    "vite-plugin-chunk-split": "^0.4.7",
+    "@types/node": "^18.19.130",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "sass": "^1.94.1",
+    "typescript": "^5.9.3",
+    "vite": "^4.5.14",
+    "vite-plugin-chunk-split": "^0.5.0",
     "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-preload": "^0.2.0",
-    "vite-plugin-webfont-dl": "^3.7.3"
+    "vite-plugin-preload": "^0.4.4",
+    "vite-plugin-webfont-dl": "^3.11.1"
   }
 }
