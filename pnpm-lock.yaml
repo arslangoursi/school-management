@@ -41,28 +41,28 @@ importers:
         version: 18.3.7(@types/react@18.3.27)
       '@vitejs/plugin-react':
         specifier: ^4.7.0
-        version: 4.7.0(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1))
+        version: 4.7.0(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2))
       sass:
-        specifier: ^1.94.1
-        version: 1.94.1
+        specifier: ^1.94.2
+        version: 1.94.2
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
       vite:
         specifier: ^4.5.14
-        version: 4.5.14(@types/node@18.19.130)(sass@1.94.1)
+        version: 4.5.14(@types/node@18.19.130)(sass@1.94.2)
       vite-plugin-chunk-split:
         specifier: ^0.5.0
-        version: 0.5.0(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1))
+        version: 0.5.0(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2))
       vite-plugin-compression:
         specifier: ^0.5.1
-        version: 0.5.1(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1))
+        version: 0.5.1(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2))
       vite-plugin-preload:
         specifier: ^0.4.4
-        version: 0.4.4(rollup@3.29.5)(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1))
+        version: 0.4.4(rollup@3.29.5)(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2))
       vite-plugin-webfont-dl:
         specifier: ^3.11.1
-        version: 3.11.1(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1))
+        version: 3.11.1(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2))
 
 packages:
 
@@ -1073,8 +1073,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.94.1:
-    resolution: {integrity: sha512-/YVm5FRQaRlr3oNh2LLFYne1PdPlRZGyKnHh1sLleOqLcohTR4eUUvBjBIqkl1fEXd1MGOHgzJGJh+LgTtV4KQ==}
+  sass@1.94.2:
+    resolution: {integrity: sha512-N+7WK20/wOr7CzA2snJcUSSNTCzeCGUTFY3OgeQP3mZ1aj9NMQ0mSTXwlrnd89j33zzQJGqIN52GIOmYrfq46A==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1696,7 +1696,7 @@ snapshots:
       '@types/prop-types': 15.7.15
       csstype: 3.2.3
 
-  '@vitejs/plugin-react@4.7.0(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1))':
+  '@vitejs/plugin-react@4.7.0(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2))':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.5)
@@ -1704,7 +1704,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.1)
+      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -2264,7 +2264,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.94.1:
+  sass@1.94.2:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.4
@@ -2339,28 +2339,28 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.27
 
-  vite-plugin-chunk-split@0.5.0(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1)):
+  vite-plugin-chunk-split@0.5.0(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2)):
     dependencies:
       es-module-lexer: 1.7.0
       import-meta-resolve: 4.2.0
       magic-string: 0.30.21
-      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.1)
+      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.2)
 
-  vite-plugin-compression@0.5.1(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1)):
+  vite-plugin-compression@0.5.1(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2)):
     dependencies:
       chalk: 4.1.2
       debug: 4.4.3
       fs-extra: 10.1.0
-      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.1)
+      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.2)
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-preload@0.4.4(rollup@3.29.5)(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1)):
+  vite-plugin-preload@0.4.4(rollup@3.29.5)(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2)):
     dependencies:
       '@rollup/pluginutils': 5.3.0(rollup@3.29.5)
       jsdom: 24.1.3
       prettier: 3.6.2
-      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.1)
+      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.2)
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -2368,17 +2368,17 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  vite-plugin-webfont-dl@3.11.1(vite@4.5.14(@types/node@18.19.130)(sass@1.94.1)):
+  vite-plugin-webfont-dl@3.11.1(vite@4.5.14(@types/node@18.19.130)(sass@1.94.2)):
     dependencies:
       axios: 1.13.2
       clean-css: 5.3.3
       flat-cache: 6.1.19
       picocolors: 1.1.1
-      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.1)
+      vite: 4.5.14(@types/node@18.19.130)(sass@1.94.2)
     transitivePeerDependencies:
       - debug
 
-  vite@4.5.14(@types/node@18.19.130)(sass@1.94.1):
+  vite@4.5.14(@types/node@18.19.130)(sass@1.94.2):
     dependencies:
       esbuild: 0.18.20
       postcss: 8.5.6
@@ -2386,7 +2386,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 18.19.130
       fsevents: 2.3.3
-      sass: 1.94.1
+      sass: 1.94.2
 
   w3c-xmlserializer@5.0.0:
     dependencies:
